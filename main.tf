@@ -5,17 +5,17 @@ resource "google_cloud_run_service" "run-app-from-tf" {
   template {
     spec {
       containers {
-        image = "gcr.io/google-samples/hello-app:1.0"
-        #image = "gcr.io/google-samples/hello-app:2.0"
+        # image = "gcr.io/google-samples/hello-app:1.0"
+        image = "gcr.io/google-samples/hello-app:2.0"
       }
     }
   }
   traffic {
-    revision_name = "run-app-from-tf-h4ndf"
+    revision_name = "run-app-from-tf-vp2vw"
     percent = 50
   }
   traffic {
-    revision_name = "run-app-from-tf-wmcw5"
+    revision_name = "run-app-from-tf-w4n6k"
     percent = 50
   }
 }
