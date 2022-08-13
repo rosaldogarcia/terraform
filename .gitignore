@@ -3,3 +3,4 @@ keys.json
 *.tfstate.backup
 *.tfstate
 *.terraform
+*.hcl
